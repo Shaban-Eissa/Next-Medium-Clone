@@ -1,27 +1,106 @@
-# Next.js + Tailwind CSS Example
+# Next.js Medium Clone
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+<img src="https://github.com/Shaban-Eissa/Next-Medium-Clone/assets/49924090/72865f8a-08eb-40d7-963b-af9d430d8d8e" width="300" height="100" />
 
-## Deploy your own
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+This is a Medium clone project built with Next.js, aiming to replicate the functionality and design of the popular online publishing platform.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Table of Contents
 
-## How to use
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+## Features
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+- **Comments:** Enables users to comment on articles.
+- **Responsive Design:** Ensures a seamless experience on various devices.
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+## Demo
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+<img src="https://github.com/Shaban-Eissa/Next-Medium-Clone/assets/49924090/ccb7fd06-7f66-4f75-89fc-c66b1a63c1f6" width="900" height="380" />
+<br />
+Check out the live demo https://next-medium-clone-sigma.vercel.app
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Shaban-Eissa/Next-Medium-Clone.git
+   ```
+
+2. **Install dependencies:**
+    
+    ```bash
+    cd Next-Medium-Clone
+    npm install
+    ```
+
+3. **Set up Sanity CMS:**
+    
+    * Create a Sanity account if you don't have one: [Sanity](https://www.sanity.io/)
+    * Create a new project in the Sanity Studio.
+    * Obtain your Sanity API Token and dataset name.
+4. **Set up environment variables:**
+    
+    Create a `.env` file in the root directory and add the following environment variables:
+    
+    ```env
+    NEXT_PUBLIC_SANITY_DATASET=your_sanity_dataset
+    NEXT_PUBLIC_SANITY_PROJECT_ID=your_sanity_project_id
+    SANITY_API_TOKEN=your_sanity_api_token
+    ```
+    
+    Replace `your_sanity_dataset`, `your_sanity_project_id`, and `your_sanity_api_token` with your actual Sanity CMS credentials.
+    
+5. **Run the Sanity Studio:**
+    
+    ```bash
+    cd sanityyoutube
+    sanity start
+    ```
+    
+    This command will start the Sanity Studio, allowing you to manage your content.
+       
+6. **Run the development server:**
+    
+    ```bash
+    npm run dev
+    ```
+    
+7. **Open your browser:**
+    
+    Navigate to `http://localhost:3000` to see the Medium clone.
+    
+
+## Usage
+
+
+    
+* **Creating Articles:**
+    
+    Articles added with Sanity.io CMS .
+    
+* **Interacting with Articles:**
+    
+    Users can comment on articles
+    
+
+## Technologies
+
+- Next.js
+- Next-sanity
+- Sanity CMS
+- React-hook-form
+- Tailwind CSS
+- Typescript
+
+
+## Contributing
+
+Feel free to contribute by opening issues or submitting pull requests. Your feedback and contributions are highly appreciated.
